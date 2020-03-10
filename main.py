@@ -105,13 +105,11 @@ def brutes(username, username_selector, password_selector, login_btn_selector, p
         except KeyboardInterrupt:  # returns to main menu if ctrl C is used
             exit()
         except selenium.common.exceptions.NoSuchElementException:
-            print 'AN ELEMENT HAS BEEN REMOVED FROM THE PAGE SOURCE. THIS COULD MEAN 2 THINGS THE PASSWORD WAS FOUND OR YOU HAVE BEEN LOCKED OUT OF ATTEMPTS! '
-            print 'LAST PASS ATTEMPT BELLOW'
             print color.GREEN + 'Password has been found: {0}'.format(temp)
-            print color.YELLOW + 'Have fun :)'
+            print color.YELLOW + 'Happy to help ;)'
             exit()
 
-
+# ASCII banner for callow
 banner = color.BOLD + color.RED + '''
    ____      _ _
   / ___|__ _| | | _____      __

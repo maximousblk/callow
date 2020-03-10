@@ -1,6 +1,6 @@
 # Callow
 
-Callow is an dead simple brute force tool for websites with simple structures.
+Callow is a dead simple brute force tool for websites with simple structures.
 
 > **Note:** *This project currentry only supports windows*
 
@@ -10,9 +10,7 @@ Callow is an dead simple brute force tool for websites with simple structures.
 - Google Chrome
 - [Chromedriver](http://chromedriver.chromium.org/)
 
-Callow currently ships with ChromeDriver 80.0.3987.106 and hence supports Chrome 80 and quite possibly any future virsions.
-
-If you want to use a different directory, simply change the CHROME_DRIVER_LOCATION variable inside the python file.
+Callow currently ships with ChromeDriver 80.0.3987.106 and hence supports Chrome 80 and quite possibly any future versions of chrome. For older versions of chrome, replace the `chromedriver.exe` with the version compatible with your version of chrome.
 
 ## Installation
 
