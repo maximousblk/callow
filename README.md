@@ -32,8 +32,8 @@ pip3 install -r requirements.txt
 
 ```txt
 ~\workspace\repos\maximousblk\callow (master -> origin)
-λ python main.py -h
-Usage: main.py [options]
+λ callow.py -h
+Usage: callow.py [options]
 
 Options:
   -h, --help       show this help message and exit
