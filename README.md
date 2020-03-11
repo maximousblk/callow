@@ -4,9 +4,11 @@ Callow is a dead simple brute force tool for websites with simple structures.
 
 > **Note:** *This project currentry only supports windows*
 
+<sup>This project is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.</sup>
+
 ## Requirements
 
-- Python 2.7.x
+- Python 3.x
 - Google Chrome
 - [Chromedriver](http://chromedriver.chromium.org/)
 
@@ -23,7 +25,7 @@ git clone https://github.com/maximousblk/callow.git
 - Install dependencies
 
 ```txt
-pip2 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Options
@@ -47,16 +49,15 @@ dont worry if you run the tool without any options. You'll greeted with a wizard
 
 ## How to use
 
-1 Find a website with a login page
-2 Inspect element to find the Selector of the username form
-3 Do the same for the password field
-4 The the login form
-5 When Asked put in the username to brute force
-6 Watch it go!
+1. Find a website with a login page
+2. Inspect element to find the Selector of the username and password input elements and the form submit button
+3. choose a target username to attack
+4. Choose a password list file
+5. Let it run.
 
 ## To Do
 
-- [ ] Make it Python 3 compatible
+- [x] Port to Python 3.x
 - [ ] Cross platform compatibility
 
 For more, look into [issues](/issues/) and [projects](/projects/)...

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <style>
+            * {
+                letter-spacing: -0.02px;
+                -webkit-font-smoothing: antialiased;
+                width: 100%;
+                font-family: "Montserrat";
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            a,
+            a *,
+            * {
+                text-decoration: none;
+                outline: 0px;
+            }
+
+            button {
+                outline: 0px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            main {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(45deg, #772b5a, #d3362f, #ffce7a);
+            }
+
+            main .form {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 500px;
+                height: auto;
+                padding: 40px 100px 50px 100px;
+                background: #fff;
+                border-radius: 40px;
+                /*box-shadow: 0px 20px 100px rgba(160, 59, 68, 1);*/
+            }
+
+            main .form h2 {
+                font-size: 40px;
+                line-height: 80px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0px 0px 20px 0px;
+                color: #485459;
+            }
+
+            main .form .cred {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 70px;
+                padding: 10px 0px 0px 0px;
+                margin: 0px 0px 10px 0px;
+            }
+
+            main .form .cred input {
+                display: block;
+                width: 100%;
+                height: 42px;
+                padding: 0px 0px 0px 4px;
+                border: none;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #485459;
+                border-bottom: 2px solid #ddd;
+                background: transparent;
+            }
+
+            main .form .cred input:focus ~ .label,
+            main .form .cred input:valid ~ .label {
+                top: -6px;
+                left: 2px;
+                font-size: 12px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #7c8589;
+            }
+
+            main .form .cred input:focus ~ .bar {
+                width: 100%;
+            }
+
+            main .form .cred input:focus {
+                border-bottom: 2px solid #fff;
+            }
+
+            main .form .cred .label {
+                position: absolute;
+                top: 19px;
+                left: 4px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #485459;
+                pointer-events: none;
+            }
+
+            main .form .cred .bar {
+                display: block;
+                position: absolute;
+                bottom: 18px;
+                left: 0px;
+                width: 0px;
+                height: 2px;
+                border-radius: 2px;
+                background: linear-gradient(45deg, #d3362f, #ffce7a);
+                pointer-events: none;
+            }
+
+            main .form #submit {
+                display: block;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                margin: 20px 0px 0px 0px;
+                padding: 0px 20px 0px 20px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 36px;
+                color: #fff;
+                border-radius: 25px;
+                border: 0px;
+                opacity: 1;
+                background: linear-gradient(45deg, #772b5a, #d3362f, #ffce7a);
+                cursor: pointer;
+            }
+
+            main .form button:hover {
+                box-shadow: 0px 10px 20px rgba(211, 54, 47, 0.4);
+            }
+
+            main .form .serviceLink {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 28px 0px 0px 0px;
+                font-size: 11px;
+                line-height: 24px;
+                font-weight: 700;
+                color: #7c8589;
+                opacity: 0.5;
+            }
+
+            main .form .serviceLink:hover {
+                opacity: 1;
+            }
+
+            /* animations */
+            .form * {
+                transition: 0.25s ease-in-out all;
+                -moz-transition: 0.25s ease-in-out all;
+                -webkit-transition: 0.25s ease-in-out all;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main id="form">
+            <form>
+                <div class="form">
+                    <h2>Login</h2>
+
+                    <div class="cred">
+                        <input id="username" type="text" />
+                        <span class="bar"></span>
+                        <span class="label">Username</span>
+                    </div>
+
+                    <div class="cred">
+                        <input id="password" type="password" />
+                        <span class="bar"></span>
+                        <span class="label">Password</span>
+                    </div>
+
+                    <div class="button">
+                        <input
+                            id="submit"
+                            type="submit"
+                            onClick="check()"
+                            value="Login"
+                        />
+                        <a
+                            class="serviceLink"
+                            onclick="swal('Here you go!', 'Username: testuser\nPassword: testpass', 'info');"
+                            >Forgot password?</a
+                        >
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <main id="status" style="visibility: hidden">
+            <div class="form">
+                <h2>You are logged in!</h2>
+                <button id="submit" onclick="logout()">Logout</button>
+            </div>
+        </main>
+
+        <script>
+            // Check if user is already logged in
+            if (localStorage.getItem("login") === "yes") {
+                // Remove login form
+                var fm = document.getElementById("form");
+                fm.parentNode.removeChild(fm);
+                // Show hidden content
+                document.getElementById("status").style.visibility = "visible";
+            } else {
+                // Saving credentials
+                localStorage.setItem("username", "testuser");
+                localStorage.setItem("password", "testpass");
+                localStorage.setItem("login", "no");
+            }
+
+            function logout() {
+                // Deleting all credentials
+                localStorage.clear();
+                location.reload();
+            }
+
+            // Check if the credentials is equal to entered data in the local storage
+            function check() {
+                // Stored credentials
+                var usernameValue = localStorage.getItem("username");
+                var passwordValue = localStorage.getItem("password");
+
+                // Entered credentials
+                var userName = document.getElementById("username");
+                var passWord = document.getElementById("password");
+
+                // check if stored credentials are correct
+                if (
+                    userName.value == usernameValue &&
+                    passWord.value == passwordValue
+                ) {
+                    // Save login status
+                    localStorage.setItem("login", "yes");
+                    location.reload();
+                } else {
+                    swal(
+                        "Oopsie!",
+                        "Username or password is incorrect.",
+                        "error"
+                    );
+                }
+            }
+        </script>
+    </body>
+</html>
