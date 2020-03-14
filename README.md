@@ -1,12 +1,15 @@
 # Callow
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow?ref=badge_shield)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow?ref=badge_shield)
 
 Callow is a dead simple brute force tool for websites with simple structures.
 
-> **Note:** *This project currentry only supports windows*
+> **Note:** _This project currentry only supports windows_
 
-<sup>This project is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.</sup>
+<sup>This project is basically a fork of
+[metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it
+independently. Being a fork of a parent project, Callow respects and inherits
+the same license terms of Hatch.</sup>
 
 ## Requirements
 
@@ -14,7 +17,10 @@ Callow is a dead simple brute force tool for websites with simple structures.
 - Google Chrome
 - [Chromedriver](http://chromedriver.chromium.org/)
 
-Callow currently ships with ChromeDriver 80.0.3987.106 and hence supports Chrome 80 and quite possibly any future versions of chrome. For older versions of chrome, replace the `chromedriver.exe` with the version compatible with your version of chrome.
+Callow currently ships with ChromeDriver 80.0.3987.106 and hence supports Chrome
+80 and quite possibly any future versions of chrome. For older versions of
+chrome, replace the `chromedriver.exe` with the version compatible with your
+version of chrome.
 
 ## Installation
 
@@ -47,12 +53,14 @@ Options:
   --pass=PASSLIST  Password dictionary
 ```
 
-dont worry if you run the tool without any options. You'll greeted with a wizard!
+dont worry if you run the tool without any options. You'll greeted with a
+wizard!
 
 ## How to use
 
 1. Find a website with a login page
-2. Inspect element to find the Selector of the username and password input elements and the form submit button
+2. Inspect element to find the Selector of the username and password input
+   elements and the form submit button
 3. choose a target username to attack
 4. Choose a password list file
 5. Let it run.
@@ -64,6 +72,6 @@ dont worry if you run the tool without any options. You'll greeted with a wizard
 
 For more, look into [issues](/issues/) and [projects](/projects/)...
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow?ref=badge_large)
