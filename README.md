@@ -1,4 +1,6 @@
 # Callow
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow?ref=badge_shield)
+
 
 Callow is a dead simple brute force tool for websites with simple structures.
 
@@ -61,3 +63,7 @@ dont worry if you run the tool without any options. You'll greeted with a wizard
 - [ ] Cross platform compatibility
 
 For more, look into [issues](/issues/) and [projects](/projects/)...
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaximousblk%2Fcallow?ref=badge_large)
