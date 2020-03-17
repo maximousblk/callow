@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>Callow</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Callow is a dead simple login brute-force tool" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="img/callow.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/grid.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="//callow.now.sh/"><img id="title_image" src="img/logo.svg" alt="CALLOW" /></a>
+        <h2>A dead simple login brute-force tool</h2>
+    </header>
+
+    <div class="container">
+        <main>
+            <section>
+
+                <div class="row">
+                    <div class="col">
+                        <h4>Customizable</h4>
+                        <p>Being written in python 3 makes it easier for the user to customize it according to their needs and circumstances.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Intuitive</h4>
+                        <p>Very simple to understand and get started. It has been made with beginners in mind and has easy to understand error handling.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Open Source</h4>
+                        <p>Callow is available free of charge under the <a href="//www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 license</a> and can be used for both, commercial and non-commercial purposes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h3>Download</h3>
+
+            <section class="download">
+                <div class="github">
+                    <h2 id="latest-version">&nbsp;</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="installation">
+                            <h4>Requirements</h4>
+                            <ol>
+                                <li>Python 3.5+</li>
+                                <li>Google chrome 80+</li>
+                                <li><a href="//chromedriver.chromium.org/">ChromeDriver</a></li>
+                            </ol>
+                            <p>Callow includes ChromeDriver 80 which supports Chrome 80 and probably any future versions of chrome. For older versions, replace the <code>chromedriver.exe</code> with the version compatible with your version of chrome.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="installation">
+                            <h4>Installation</h4>
+
+                            <p>Using git :
+                                <pre>git clone github.com/maximousblk/callow.git</pre>
+                                <small>or <a id="zip" href="//github.com/maximousblk/callow/archive/master.zip">Download zip <span id="size">~4.20MB (nice!)</span></small></a>
+                            </p>
+
+                            <p>Install dependencies:
+                                <pre>pip3 install -r requirements.txt</pre>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4>Updating</h4>
+                        <p>
+                            If you want to get most recent updates for Callow, just pull the repository using
+                            <pre>git pull origin master</pre>
+                            Or, you can download the latest version from <a href="//github.com/maximousblk/callow/releases">releases page</a> on Github.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <h3>Getting Started</h3>
+
+            <section class="var_doc">
+
+                <div class="row">
+                    <div class="col">
+                        <p>If you are doing this first time, you can test this safely on our <a href="//callow.now.sh/sandbox/">sandbox</a> so that no one gets harmed</p>
+                        <p>Most important part for this to work is to get the selectors right. To do that:</p>
+                        <ol>
+                            <li>Run <code>callow.py</code> in the installation directory</li>
+                            <li>Go to the page that has the login page</li>
+                            <li>Open developer tools using <code>Ctrl</code> + <code>Shift</code> + <code>I</code></li>
+                            <li>Enter the css selector for <code>&lt;input&gt;</code> tags for username and password field</li>
+                            <li>Enter the username or email of the target</li>
+                            <li>Enter the location of the password dictionary/list</li>
+                            <li>Let it run and wait for eternity</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <h3>Disclaimer</h3>
+
+            <section>
+                <p>This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause harm.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="container">
+        <p>Made with ❤ by
+            <a href="//github.com/maximousblk">Maximous Black</a> and
+            <a href="//github.com/maximousblk/callow/graphs/contributors">friends</a></p>
+    </footer>
+
+    <script type="text/javascript" defer="defer">
+        $(document).ready(function () {
+            getLatestReleases();
+        });
+
+        function getSizeInMb(bytes, decimal) {
+            var decimal = decimal || 0;
+            var size = bytes / Math.pow(2, 20);
+            return ("(~" + (decimal == 0 ? Math.ceil(size) : size.toFixed(decimal)) + "MB)");
+        }
+
+        function getLatestReleases() {
+            $.getJSON("https://api.github.com/repos/maximousblk/callow/releases/latest").done(function (release) {
+                $("#latest-version").html("Latest version: " + release.name);
+                for (const asset of release.assets) {
+                    switch (asset.name) {
+                        case "callow.zip":
+                            $("#zip").attr("href", asset.browser_download_url);
+                            $("#size").html(getSizeInMb(asset.size, 2));
+                            break;
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

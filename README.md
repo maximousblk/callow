@@ -1,34 +1,88 @@
+<p align="center">
+<a href="//callow.now.sh/">
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="328px" height="100px" viewBox="0 0 328 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <desc>Created with Lunacy</desc>
+    <g id="____------_-_--/-___|__-_|-|" transform="translate(-6.103516E-05 0)">
+        <g id="____------_-_" fill="#000000">
+            <path d="M31.32 7.92999L22.68 7.92999L22.68 9.27999L31.32 9.27999L31.32 7.92999ZM42.12 7.92999L33.48 7.92999L33.48 9.27999L42.12 9.27999L42.12 7.92999ZM44.28 7.92999L52.92 7.92999L52.92 9.27999L44.28 9.27999L44.28 7.92999ZM63.72 7.92999L55.08 7.92999L55.08 9.27999L63.72 9.27999L63.72 7.92999ZM130.68 7.92999L139.32 7.92999L139.32 9.27999L130.68 9.27999L130.68 7.92999ZM160.92 7.92999L152.28 7.92999L152.28 9.27999L160.92 9.27999L160.92 7.92999Z" />
+        </g>
+        <g id="/-___|__-_|-|-|-_____------__" fill="#000000">
+            <path d="M20.25 14.54L18.54 14.54L12.15 31.46L13.86 31.46L20.25 14.54ZM69.39 14.54L71.01 14.54L71.01 31.46L69.39 31.46L69.39 14.54ZM123.39 14.54L125.01 14.54L125.01 31.46L123.39 31.46L123.39 14.54ZM146.61 14.54L144.99 14.54L144.99 31.46L146.61 31.46L146.61 14.54ZM166.59 14.54L168.21 14.54L168.21 31.46L166.59 31.46L166.59 14.54ZM42.12 29.93L33.48 29.93L33.48 31.28L42.12 31.28L42.12 29.93ZM44.28 29.93L52.92 29.93L52.92 31.28L44.28 31.28L44.28 29.93ZM63.72 29.93L55.08 29.93L55.08 31.28L63.72 31.28L63.72 29.93ZM85.32 29.93L76.68 29.93L76.68 31.28L85.32 31.28L85.32 29.93ZM87.48 29.93L96.12 29.93L96.12 31.28L87.48 31.28L87.48 29.93ZM117.72 29.93L109.08 29.93L109.08 31.28L117.72 31.28L117.72 29.93ZM193.32 29.93L184.68 29.93L184.68 31.28L193.32 31.28L193.32 29.93ZM195.48 29.93L204.12 29.93L204.12 31.28L195.48 31.28L195.48 29.93ZM214.92 29.93L206.28 29.93L206.28 31.28L214.92 31.28L214.92 29.93ZM217.08 29.93L225.72 29.93L225.72 31.28L217.08 31.28L217.08 29.93ZM236.52 29.93L227.88 29.93L227.88 31.28L236.52 31.28L236.52 29.93ZM303.48 29.93L312.12 29.93L312.12 31.28L303.48 31.28L303.48 29.93ZM322.92 29.93L314.28 29.93L314.28 31.28L322.92 31.28L322.92 29.93Z" />
+        </g>
+        <g id="|-|---/-_`-|-|-|/-_-\-\-/\-/-/" fill="#000000">
+            <path d="M6.21 36.54L4.59 36.54L4.59 53.46L6.21 53.46L6.21 36.54ZM27.81 36.54L26.19 36.54L26.19 53.46L27.81 53.46L27.81 36.54ZM72.54 36.54L74.25 36.54L67.86 53.46L66.15 53.46L72.54 36.54ZM125.01 36.54L123.39 36.54L123.39 53.46L125.01 53.46L125.01 36.54ZM144.99 36.54L146.61 36.54L146.61 53.46L144.99 53.46L144.99 36.54ZM168.21 36.54L166.59 36.54L166.59 53.46L168.21 53.46L168.21 36.54ZM180.54 36.54L182.25 36.54L175.86 53.46L174.15 53.46L180.54 36.54ZM225.45 53.46L223.74 53.46L217.35 36.54L219.06 36.54L225.45 53.46ZM245.34 53.46L247.05 53.46L240.66 36.54L238.95 36.54L245.34 53.46ZM266.94 36.54L268.65 36.54L262.26 53.46L260.55 53.46L266.94 36.54ZM277.74 53.46L279.45 53.46L273.06 36.54L271.35 36.54L277.74 53.46ZM299.34 36.54L301.05 36.54L294.66 53.46L292.95 53.46L299.34 36.54ZM322.65 36.54L320.94 36.54L314.55 53.46L316.26 53.46L322.65 36.54ZM100.26 37.152L102.24 37.152L104.22 39.78L102.6 39.78L100.26 37.152ZM96.12 51.93L87.48 51.93L87.48 53.28L96.12 53.28L96.12 51.93ZM204.12 51.93L195.48 51.93L195.48 53.28L204.12 53.28L204.12 51.93Z" />
+        </g>
+        <g id="|-|__|-(_|-|-|-|-(_)-\-V--V-/" fill="#000000">
+            <path d="M79.308 62.833Q78.93 63.976 78.93 65.29L78.93 68.71Q78.93 70.06 79.299 71.203Q79.668 72.346 80.361 73.246Q81.054 74.146 82.053 74.776Q83.052 75.406 84.33 75.73L84.33 74.128Q83.466 73.93 82.764 73.444Q82.062 72.958 81.567 72.256Q81.072 71.554 80.811 70.654Q80.55 69.754 80.55 68.71L80.55 65.29Q80.55 64.228 80.82 63.319Q81.09 62.41 81.576 61.69Q82.062 60.97 82.764 60.484Q83.466 59.998 84.33 59.8L84.33 58.27Q83.088 58.576 82.089 59.224Q81.09 59.872 80.388 60.781Q79.686 61.69 79.308 62.833ZM187.308 62.833Q186.93 63.976 186.93 65.29L186.93 68.71Q186.93 70.06 187.299 71.203Q187.668 72.346 188.361 73.246Q189.054 74.146 190.053 74.776Q191.052 75.406 192.33 75.73L192.33 74.128Q191.466 73.93 190.764 73.444Q190.062 72.958 189.567 72.256Q189.072 71.554 188.811 70.654Q188.55 69.754 188.55 68.71L188.55 65.29Q188.55 64.228 188.82 63.319Q189.09 62.41 189.576 61.69Q190.062 60.97 190.764 60.484Q191.466 59.998 192.33 59.8L192.33 58.27Q191.088 58.576 190.089 59.224Q189.09 59.872 188.388 60.781Q187.686 61.69 187.308 62.833ZM209.511 59.224Q208.512 58.576 207.27 58.27L207.27 59.8Q208.134 59.998 208.836 60.484Q209.538 60.97 210.024 61.69Q210.51 62.41 210.78 63.319Q211.05 64.228 211.05 65.29L211.05 68.71Q211.05 69.754 210.789 70.654Q210.528 71.554 210.033 72.256Q209.538 72.958 208.836 73.444Q208.134 73.93 207.27 74.128L207.27 75.73Q208.548 75.406 209.547 74.776Q210.546 74.146 211.239 73.246Q211.932 72.346 212.301 71.203Q212.67 70.06 212.67 68.71L212.67 65.29Q212.67 63.976 212.292 62.833Q211.914 61.69 211.212 60.781Q210.51 59.872 209.511 59.224ZM6.21 58.54L4.59 58.54L4.59 75.46L6.21 75.46L6.21 58.54ZM27.81 58.54L26.19 58.54L26.19 75.46L27.81 75.46L27.81 58.54ZM58.59 58.54L60.21 58.54L60.21 75.46L58.59 75.46L58.59 58.54ZM103.41 58.54L101.79 58.54L101.79 75.46L103.41 75.46L103.41 58.54ZM123.39 58.54L125.01 58.54L125.01 75.46L123.39 75.46L123.39 58.54ZM146.61 58.54L144.99 58.54L144.99 75.46L146.61 75.46L146.61 58.54ZM166.59 58.54L168.21 58.54L168.21 75.46L166.59 75.46L166.59 58.54ZM236.25 75.46L234.54 75.46L228.15 58.54L229.86 58.54L236.25 75.46ZM311.85 58.54L310.14 58.54L303.75 75.46L305.46 75.46L311.85 58.54ZM250.92 60.52L249.192 60.52L252.612 73.48L254.88 73.48L258.408 60.52L256.716 60.52L254.178 70.654Q254.088 71.032 254.016 71.347Q253.944 71.662 253.908 71.896Q253.854 72.184 253.818 72.4L253.746 72.4Q253.71 72.184 253.674 71.896Q253.638 71.662 253.566 71.347Q253.494 71.032 253.404 70.654L250.92 60.52ZM281.592 60.52L283.32 60.52L285.804 70.654Q285.894 71.032 285.966 71.347Q286.038 71.662 286.074 71.896Q286.11 72.184 286.146 72.4L286.218 72.4Q286.254 72.184 286.308 71.896Q286.344 71.662 286.416 71.347Q286.488 71.032 286.578 70.654L289.116 60.52L290.808 60.52L287.28 73.48L285.012 73.48L281.592 60.52ZM33.48 73.93L42.12 73.93L42.12 75.28L33.48 75.28L33.48 73.93ZM52.92 73.93L44.28 73.93L44.28 75.28L52.92 75.28L52.92 73.93ZM87.48 73.93L96.12 73.93L96.12 75.28L87.48 75.28L87.48 73.93ZM195.48 73.93L204.12 73.93L204.12 75.28L195.48 75.28L195.48 73.93Z" />
+        </g>
+        <g id="\____\__,_|_|_|\___/-\_/\_/" fill="#000000">
+            <path d="M18.54 97.46L20.25 97.46L13.86 80.54L12.15 80.54L18.54 97.46ZM72.54 97.46L74.25 97.46L67.86 80.54L66.15 80.54L72.54 97.46ZM123.39 80.54L125.01 80.54L125.01 97.46L123.39 97.46L123.39 80.54ZM144.99 80.54L146.61 80.54L146.61 97.46L144.99 97.46L144.99 80.54ZM166.59 80.54L168.21 80.54L168.21 97.46L166.59 97.46L166.59 80.54ZM180.54 97.46L182.25 97.46L175.86 80.54L174.15 80.54L180.54 97.46ZM225.45 80.54L223.74 80.54L217.35 97.46L219.06 97.46L225.45 80.54ZM247.05 97.46L245.34 97.46L238.95 80.54L240.66 80.54L247.05 97.46ZM266.94 80.54L268.65 80.54L262.26 97.46L260.55 97.46L266.94 80.54ZM277.74 97.46L279.45 97.46L273.06 80.54L271.35 80.54L277.74 97.46ZM301.05 80.54L299.34 80.54L292.95 97.46L294.66 97.46L301.05 80.54ZM103.95 92.762L101.61 98.36L100.17 98.36L101.61 92.762L103.95 92.762ZM31.32 95.93L22.68 95.93L22.68 97.28L31.32 97.28L31.32 95.93ZM33.48 95.93L42.12 95.93L42.12 97.28L33.48 97.28L33.48 95.93ZM52.92 95.93L44.28 95.93L44.28 97.28L52.92 97.28L52.92 95.93ZM55.08 95.93L63.72 95.93L63.72 97.28L55.08 97.28L55.08 95.93ZM76.68 95.93L85.32 95.93L85.32 97.28L76.68 97.28L76.68 95.93ZM96.12 95.93L87.48 95.93L87.48 97.28L96.12 97.28L96.12 95.93ZM117.72 95.93L109.08 95.93L109.08 97.28L117.72 97.28L117.72 95.93ZM139.32 95.93L130.68 95.93L130.68 97.28L139.32 97.28L139.32 95.93ZM160.92 95.93L152.28 95.93L152.28 97.28L160.92 97.28L160.92 95.93ZM184.68 95.93L193.32 95.93L193.32 97.28L184.68 97.28L184.68 95.93ZM204.12 95.93L195.48 95.93L195.48 97.28L204.12 97.28L204.12 95.93ZM206.28 95.93L214.92 95.93L214.92 97.28L206.28 97.28L206.28 95.93ZM258.12 95.93L249.48 95.93L249.48 97.28L258.12 97.28L258.12 95.93ZM281.88 95.93L290.52 95.93L290.52 97.28L281.88 97.28L281.88 95.93Z" />
+        </g>
+    </g>
+</svg>
+<br>
+<br>
+</a>
+</p>
+
 # Callow
 
-Callow is a dead simple brute force tool for websites with simple structures.
+A dead simple login brute-force tool
 
-> **Note:** *This project currentry only supports windows*
+> **Note:** _This project currentry only supports windows_
 
 <sup>This project is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.</sup>
 
 ## Requirements
 
-- Python 3.x
-- Google Chrome
-- [Chromedriver](http://chromedriver.chromium.org/)
+1.  Python 3.5+
+2.  Google chrome 80+
+3.  [ChromeDriver](//chromedriver.chromium.org/)
 
-Callow currently ships with ChromeDriver 80.0.3987.106 and hence supports Chrome 80 and quite possibly any future versions of chrome. For older versions of chrome, replace the `chromedriver.exe` with the version compatible with your version of chrome.
+Callow includes ChromeDriver 80 which supports Chrome 80 and probably any future versions of chrome. For older versions, replace the `chromedriver.exe` with the version compatible with your version of chrome.
 
 ## Installation
 
-- Clone the repo
+- Clone the repo :
 
-```txt
-git clone https://github.com/maximousblk/callow.git
+```
+git clone github.com/maximousblk/callow.git
 ```
 
-- Install dependencies
+<small>or download from <a href="//github.com/maximousblk/callow/releases">releases</a></small>
 
-```txt
+- Install dependencies:
+
+```
 pip3 install -r requirements.txt
 ```
 
-## Options
+## Updating
+
+If you want to get most recent updates for Callow, just pull the repository using
+
+```
+git pull origin master
+```
+
+Or, you can download the latest version from [releases page](//github.com/maximousblk/callow/releases) on Github.
+
+## Getting Started
+
+If you are doing this first time, you can test this safely on our [sandbox](//callow.now.sh/sandbox/) so that no one gets harmed
+
+Most important part for this to work is to get the selectors right. To do that:
+
+1.  Run `callow.py` in the installation directory
+2.  Go to the page that has the login page
+3.  Open developer tools using `Ctrl` + `Shift` + `I`
+4.  Enter the css selector for `<input>` tags for username and password field
+5.  Enter the username or email of the target
+6.  Enter the location of the password dictionary/list
+7.  Let it run and wait for eternity
+
+## Arguments
 
 ```txt
 ~\workspace\repos\maximousblk\callow (master -> origin)
@@ -39,25 +93,22 @@ Options:
   -h, --help       show this help message and exit
   --site=WEBSITE   Target website (http/https only)
   --usel=USEL      Username input selector
-  --psel=PSEL      Password input selector
-  --lsel=LSEL      Submit button selector
+  --passsel=passsel      Password input selector
   --user=USERNAME  Target username to attack
   --pass=PASSLIST  Password dictionary
 ```
 
-dont worry if you run the tool without any options. You'll greeted with a wizard!
-
-## How to use
-
-1. Find a website with a login page
-2. Inspect element to find the Selector of the username and password input elements and the form submit button
-3. choose a target username to attack
-4. Choose a password list file
-5. Let it run.
+If you run it without passing any arguments, you'll greeted with a wizard!
 
 ## To Do
 
 - [x] Port to Python 3.x
 - [ ] Cross platform compatibility
+- [ ] Proxy/Tor support
 
 For more, look into [issues](/issues/) and [projects](/projects/)...
+
+## Disclaimer
+
+> This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts.    
+> This software is purely for educational purposes and is not intended to cause harm.
