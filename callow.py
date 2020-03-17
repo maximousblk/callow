@@ -43,14 +43,10 @@ banner = color.PURPLE + '''
 # Wizard that is presented if executed without any arguments
 def wizard():
     print(banner) # Show the banner
-    try:
-        website = input(color.GREEN + '\n[~] ' + color.WHITE + 'Target login page (http/https only): ')
-    except KeyboardInterrupt: # If user exits the program manually
-        print(color.RED + '\n[!] '+color.WHITE + 'Process terminated by user. Exiting...')
-        exit()
-    sys.stdout.write(color.GREEN + '[#] ' + color.WHITE + 'Checking if site is accessible ')
-    sys.stdout.flush()
     try: # Check if the page is accecible
+        website = input(color.GREEN + '\n[~] ' + color.WHITE + 'Target login page (http/https only): ')
+        sys.stdout.write(color.GREEN + '[#] ' + color.WHITE + 'Checking if site is accessible ')
+        sys.stdout.flush()
         request = requests.get(website) # Send a GET request to the website
         if request.status_code == 200: # If the website exists
             print(color.GREEN + '[OK]\n'+color.WHITE)
