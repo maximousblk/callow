@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <title>Callow</title>
+
+    <meta property="og:title" content="Callow">
+    <meta property="og:description" content="A dead simple login brute-force tool">
+    <meta property="og:image" content="https://callow.now.sh/img/social.png">
+    <meta property="og:url" content="https://callow.now.sh/index.html">
+    <meta name="twitter:card" content="https://callow.now.sh/img/social.png">
+    <meta property="og:site_name" content="Callow">
+    <meta name="twitter:image:alt" content="Callow">
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -18,7 +26,7 @@
 
 <body>
     <header>
-        <a href="//callow.now.sh/"><img id="title_image" src="img/logo.svg" alt="CALLOW" /></a>
+        <img id="title_image" src="img/logo.svg" alt="CALLOW" />
         <h2>A dead simple login brute-force tool</h2>
     </header>
 
@@ -37,14 +45,14 @@
                     </div>
                     <div class="col">
                         <h4>Open Source</h4>
-                        <p>Callow is available free of charge under the <a href="//www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 license</a> and can be used for both, commercial and non-commercial purposes.</p>
+                        <p>Callow is available free of charge under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 license</a> and can be used for both, commercial and non-commercial purposes.</p>
                     </div>
                 </div>
             </section>
 
             <h3>Download</h3>
 
-            <section class="download">
+            <section>
                 <div class="github">
                     <h2 id="latest-version">&nbsp;</h2>
                 </div>
@@ -55,7 +63,7 @@
                             <ol>
                                 <li>Python 3.5+</li>
                                 <li>Google chrome 80+</li>
-                                <li><a href="//chromedriver.chromium.org/">ChromeDriver</a></li>
+                                <li><a href="https://chromedriver.chromium.org/">ChromeDriver</a></li>
                             </ol>
                             <p>Callow includes ChromeDriver 80 which supports Chrome 80 and probably any future versions of chrome. For older versions, replace the <code>chromedriver.exe</code> with the version compatible with your version of chrome.</p>
                         </div>
@@ -66,7 +74,7 @@
 
                             <p>Using git :
                                 <pre>git clone github.com/maximousblk/callow.git</pre>
-                                <small>or <a id="zip" href="//github.com/maximousblk/callow/archive/master.zip">Download zip <span id="size">~4.20MB (nice!)</span></small></a>
+                                <small>or <a id="zip" href="https://github.com/maximousblk/callow/archive/master.zip">Download zip <span id="size">~4.20MB (nice!)</span></small></a>
                             </p>
 
                             <p>Install dependencies:
@@ -79,19 +87,19 @@
                         <p>
                             If you want to get most recent updates for Callow, just pull the repository using
                             <pre>git pull origin master</pre>
-                            Or, you can download the latest version from <a href="//github.com/maximousblk/callow/releases">releases page</a> on Github.
+                            Or, you can download the latest version from <a href="https://github.com/maximousblk/callow/releases">releases page</a> on Github.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <h3>Getting Started</h3>
+            <h3>Quick Start</h3>
 
-            <section class="var_doc">
+            <section>
 
                 <div class="row">
                     <div class="col">
-                        <p>If you are doing this first time, you can test this safely on our <a href="//callow.now.sh/sandbox/">sandbox</a> so that no one gets harmed</p>
+                        <p>If you are doing this first time, you can test this safely on our <a href="https://callow.now.sh/sandbox/">sandbox</a> so that no one gets harmed</p>
                         <p>Most important part for this to work is to get the selectors right. To do that:</p>
                         <ol>
                             <li>Run <code>callow.py</code> in the installation directory</li>
@@ -102,6 +110,7 @@
                             <li>Enter the location of the password dictionary/list</li>
                             <li>Let it run and wait for eternity</li>
                         </ol>
+                        <p>Check out the <a href="https://medium.com/@maximousblk/callow-6d42a14dbd50/">medium post</a> if you want a more elaborate guide.</p>
                     </div>
                 </div>
             </section>
@@ -109,15 +118,15 @@
             <h3>Disclaimer</h3>
 
             <section>
-                <p>This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause harm.</p>
+                <p>This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause any harm.</p>
             </section>
         </main>
     </div>
 
     <footer class="container">
-        <p>Made with ❤ by
-            <a href="//github.com/maximousblk">Maximous Black</a> and
-            <a href="//github.com/maximousblk/callow/graphs/contributors">friends</a></p>
+        <p>Made with <span class="love">❤</span> by
+            <a href="https://github.com/maximousblk">Maximous Black</a> and
+            <a href="https://github.com/maximousblk/callow/graphs/contributors">friends</a></p>
     </footer>
 
     <script type="text/javascript" defer="defer">

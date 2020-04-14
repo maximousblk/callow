@@ -1,38 +1,30 @@
-<p align="center">
-<a href="//callow.now.sh/"><img src="logo.svg" alt="CALLOW" /></a>
-<br>
-<br>
-</p>
-
 # Callow
 
-A dead simple login brute-force tool
+[![Callow](logo.svg "Callow")](https://callow.now.sh/)
 
-> **Note:** _This project currentry only supports windows_
-
-<sup>This project is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.</sup>
+Callow makes it stupidly simple to brute-force website login pages. It has been made with beginners in mind and is super intuitive.
 
 ## Requirements
 
-1.  Python 3.5+
-2.  Google chrome 80+
-3.  [ChromeDriver](//chromedriver.chromium.org/)
+1. Python 3.5+
+2. Google chrome 80+
+3. [ChromeDriver](https://chromedriver.chromium.org/)
 
 Callow includes ChromeDriver 80 which supports Chrome 80 and probably any future versions of chrome. For older versions, replace the `chromedriver.exe` with the version compatible with your version of chrome.
 
 ## Installation
 
-- Clone the repo :
+- Clone the repo or download from [releases](https://github.com/maximousblk/callow/releases) :
 
-```
+```txt
 git clone github.com/maximousblk/callow.git
 ```
 
-<small>or download from <a href="//github.com/maximousblk/callow/releases">releases</a></small>
+Repo is more frequently updated and fixes are easy to apply. Releases may not be completely up to date but more stable.
 
 - Install dependencies:
 
-```
+```txt
 pip3 install -r requirements.txt
 ```
 
@@ -40,53 +32,58 @@ pip3 install -r requirements.txt
 
 If you want to get most recent updates for Callow, just pull the repository using
 
-```
+```txt
 git pull origin master
 ```
 
-Or, you can download the latest version from [releases page](//github.com/maximousblk/callow/releases) on Github.
+Or, you can download the latest version from [releases page](https://github.com/maximousblk/callow/releases) on Github.
 
-## Getting Started
+## Quick Start
 
-If you are doing this first time, you can test this safely on our [sandbox](//callow.now.sh/sandbox/) so that no one gets harmed
+If you are doing this first time, you can test this safely on our [sandbox](https://callow.now.sh/sandbox/) so that no one gets harmed
 
-Most important part for this to work is to get the selectors right. To do that:
+Most important part for this to work is to get the selectors right.
 
-1.  Run `callow.py` in the installation directory
-2.  Go to the page that has the login page
-3.  Open developer tools using `Ctrl` + `Shift` + `I`
-4.  Enter the css selector for `<input>` tags for username and password field
-5.  Enter the username or email of the target
-6.  Enter the location of the password dictionary/list
-7.  Let it run and wait for eternity
+1. Run `callow.py` in the installation directory
+2. Enter the URL for the login
+3. Go to the login page
+4. Open developer tools using `Ctrl` + `Shift` + `I`
+5. Enter the css selector for `<input>` tags for username and password field
+6. Enter the username or email of the target
+7. Enter the location of the password dictionary/list and hit Enter
+
+![Wizard](docs/img/wiz.png "Wizard")
+
+Check out the [medium post](https://medium.com/@maximousblk/callow-6d42a14dbd50/) if you want a more elaborate guide.
 
 ## Arguments
 
-```txt
-~\workspace\repos\maximousblk\callow (master -> origin)
-λ callow.py -h
-Usage: callow.py [options]
+You can also pass those options in the form of arguments.
 
-Options:
-  -h, --help       show this help message and exit
-  --site=WEBSITE   Target website (http/https only)
-  --usel=USEL      Username input selector
-  --passsel=passsel      Password input selector
-  --user=USERNAME  Target username to attack
-  --pass=PASSLIST  Password dictionary
-```
+You can see the options for Callow here.
 
-If you run it without passing any arguments, you'll greeted with a wizard!
+| Option   | Function                         |
+| -------- | -------------------------------- |
+| `--site` | Target website (http/https only) |
+| `--usel` | Username input selector          |
+| `--psel` | Password input selector          |
+| `--user` | Target username to attack        |
+| `--pass` | Password dictionary              |
+
+Here is an example of how to use the arguments:
+
+![Arguments](docs/img/arg.png "Arguments")
 
 ## To Do
 
-- [x] Port to Python 3.x
-- [ ] Cross platform compatibility
+- [X] Port to Python 3.x
+- [X] Cross platform compatibility
 - [ ] Proxy/Tor support
 
 For more, look into [issues](/issues/) and [projects](/projects/)...
 
 ## Disclaimer
 
-> This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts.    
-> This software is purely for educational purposes and is not intended to cause harm.
+Callow is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
+
+> This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause any harm.

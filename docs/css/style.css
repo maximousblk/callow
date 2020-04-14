@@ -26,6 +26,14 @@ textarea {
 
 /* -------------- General Styles -------------- */
 
+html,body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 body {
     background-color: #21222c;
     font-size: 1em;
@@ -145,13 +153,13 @@ header {
     display: block;
     margin: 0 auto;
     height: auto;
-    padding: 2em;
+    padding: 1em 0;
     width: 100%;
     max-width: 80%;
     background: none;
 }
 
-.download > .github {
+.github {
     margin-bottom: 1.5em;
 }
 
@@ -206,4 +214,8 @@ ul li {
 li span {
     display: table-cell;
     width: 8em;
+}
+
+.love {
+    color: #ff79c6;
 }

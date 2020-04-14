@@ -2,7 +2,6 @@
 import sys # Basic functions
 import selenium # Selenium automates browsers. That's it!
 import requests # Handling HTTP requests
-from time import sleep
 from sys import stdout # For Prompts
 from selenium import webdriver # Used to control the browser
 from optparse import OptionParser # For argument support
@@ -36,7 +35,7 @@ banner = color.PURPLE + '''
    | |__| (_| | | | (_) \\ V  V /
     \\____\\__,_|_|_|\\___/ \\_/\\_/
 
-{0}[#] {1}maximousblk/callow@v1.1
+{0}[#] {1}maximousblk/callow@v1.2
 '''.format(color.CYAN, color.WHITE)
 
 
@@ -85,7 +84,7 @@ def crack(username, usersel, passsel, passlist, website):
     options.add_argument("--disable-popup-blocking")
     options.add_argument("--disable-extensions")
     try: # Start the browser
-        browser = webdriver.Chrome() 
+        browser = webdriver.Chrome()
     except selenium.common.exceptions.WebDriverException: # If ChromeDriver binary was not found
         print(color.RED + '\n[!] '+color.WHITE + 'ChromeDriver binary not found')
         exit()
@@ -125,15 +124,15 @@ if options.website == None and options.usersel == None and options.passsel == No
     wizard()
 missing_args = ""
 if options.website == None:
-    missing_args = missing_args + "--site "
+    missing_args += "--site "
 if options.usersel == None:
-    missing_args = missing_args + "--usel "
+    missing_args += "--usel "
 if options.passsel == None:
-    missing_args = missing_args + "--psel "
+    missing_args += "--psel "
 if options.username == None:
-    missing_args = missing_args + "--user "
+    missing_args += "--user "
 if options.passlist == None:
-    missing_args = missing_args + "--pass"
+    missing_args += "--pass"
 if missing_args != "": # If any (but not all) arguments are missing
     print(color.RED + '\n[!] '+color.WHITE + 'Missing arguments: ' + missing_args)
     wizard()
