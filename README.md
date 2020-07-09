@@ -7,14 +7,14 @@ Callow makes it stupidly simple to brute-force website login pages. It has been 
 ## Requirements
 
 1. Python 3.5+
-2. Google chrome 80+
+2. Google chrome
 3. [ChromeDriver](https://chromedriver.chromium.org/)
 
-Callow includes ChromeDriver 80 which supports Chrome 80 and probably any future versions of chrome. For older versions, replace the `chromedriver.exe` with the version compatible with your version of chrome.
+**Note:** Use the ChromeDriver version corresponding to your Chrome version.
 
 ## Installation
 
-- Clone the repo or download from [releases](https://github.com/maximousblk/callow/releases) :
+- Clone the repo or download from [releases](https://github.com/maximousblk/callow/releases):
 
 ```txt
 git clone github.com/maximousblk/callow.git
@@ -84,6 +84,10 @@ For more, look into [issues](/issues/) and [projects](/projects/)...
 
 ## Disclaimer
 
-Callow is basically a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
-
 > This project (Callow) and it's contributors do not support or take responsibility for any form of unethical acts. This software is purely for educational purposes and is not intended to cause any harm.
+
+## License
+
+Callow is a fork of [metachar/Hatch](https://github.com/metachar/Hatch) but I wanted to develop it independently. Being a fork of a parent project, Callow respects and inherits the same license terms of Hatch.
+
+Callow is available free of charge under the [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html) and can be used for both, commercial and non-commercial purposes.
