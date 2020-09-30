@@ -2,7 +2,7 @@
 
 [![Callow](logo.svg "Callow")](https://callow.now.sh/)
 
-Callow makes it stupidly simple to brute-force website login pages. It has been made with beginners in mind and is super intuitive.
+Callow makes it easily simple to brute-force website login pages. It has been made with beginners in head and is super intuitive.
 
 ## Requirements
 
