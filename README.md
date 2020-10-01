@@ -1,4 +1,4 @@
-# Callow
+# The Amazing Project
 
 [![Callow](logo.svg "Callow")](https://callow.now.sh/)
 
