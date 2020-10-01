@@ -9,6 +9,7 @@ Callow makes it stupidly simple to brute-force website login pages. It has been 
 1. Python 3.5+
 2. Google chrome
 3. [ChromeDriver](https://chromedriver.chromium.org/)
+4. Any linux distribution
 
 **Note:** Use the ChromeDriver version corresponding to your Chrome version.
 
