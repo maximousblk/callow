@@ -40,7 +40,7 @@ Or, you can download the latest version from [releases page](https://github.com/
 
 ## Quick Start
 
-If you are doing this first time, you can test this safely on our [sandbox](https://callow.now.sh/sandbox/) so that no one gets harmed
+If you are doing this for the first time, you can test this safely on our [sandbox](https://callow.now.sh/sandbox/) so that no one gets harmed.
 
 Most important part for this to work is to get the selectors right.
 
