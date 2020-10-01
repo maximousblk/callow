@@ -2,7 +2,7 @@
 
 [![Callow](logo.svg "Callow")](https://callow.now.sh/)
 
-Callow makes it stupidly simple to brute-force website login pages. It has been made with beginners in mind and is super intuitive.
+Callow makes it stupidly simple to brute-force website login pages. It has been developed keeping beginners in mind and is super intuitive.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Callow makes it stupidly simple to brute-force website login pages. It has been 
 git clone github.com/maximousblk/callow.git
 ```
 
-Repo is more frequently updated and fixes are easy to apply. Releases may not be completely up to date but more stable.
+Repo is more frequently updated and fixes are easy to apply. Releases may not be completely up to date but are more stable.
 
 - Install dependencies:
 
@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 ## Updating
 
-If you want to get most recent updates for Callow, just pull the repository using
+If you want to get the most recent updates for Callow, just pull the repository using
 
 ```txt
 git pull origin master
@@ -40,7 +40,7 @@ Or, you can download the latest version from [releases page](https://github.com/
 
 ## Quick Start
 
-If you are doing this first time, you can test this safely on our [sandbox](https://callow.now.sh/sandbox/) so that no one gets harmed
+If you are doing this for the first time, you can test this safely on our [sandbox](https://callow.now.sh/sandbox/) so that no one gets harmed.
 
 Most important part for this to work is to get the selectors right.
 
