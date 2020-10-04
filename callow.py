@@ -7,6 +7,7 @@ from selenium import webdriver # Used to control the browser
 from optparse import OptionParser # For argument support
 from pynput.keyboard import Key, Controller # Used to press enter
 
+keyboard = Controller()
 
 # Fancy colors
 class color:
