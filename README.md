@@ -54,7 +54,7 @@ Most important part for this to work is to get the selectors right.
 
 ![Wizard](docs/img/wiz.png "Wizard")
 
-Check out the [medium post](https://medium.com/@maximousblk/callow-6d42a14dbd50/) if you want a more elaborate guide.
+Check out my [blog post](https://maximousblk.me/posts/callow-bruteforce-tool) if you want a more elaborate guide.
 
 ## Arguments
 
