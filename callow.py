@@ -1,8 +1,7 @@
 # Importing modules
 import sys # Basic functions
-import selenium # Selenium automates browsers. That's it!
 import requests # Handling HTTP requests
-from sys import stdout # For Prompts
+import selenium # Selenium automates browsers. That's it!
 from selenium import webdriver # Used to control the browser
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
