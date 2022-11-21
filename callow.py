@@ -81,11 +81,13 @@ def crack(username, usersel, passsel, passlist, website):
     except FileNotFoundError: # If list was not found
         print(color.RED + '\n[!] '+color.WHITE + 'Password list not found')
         exit()
-    options = webdriver.ChromeOptions()
-    options.add_argument("--disable-popup-blocking")
-    options.add_argument("--disable-extensions")
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--disable-popup-blocking")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--log-level=2")
     try: # Start the browser
-        browser = webdriver.Chrome()
+        browser = webdriver.Chrome(options=chrome_options)
         browser.implicitly_wait(2)
     except selenium.common.exceptions.WebDriverException: # If ChromeDriver binary was not found
         print(color.RED + '\n[!] '+color.WHITE + 'ChromeDriver binary not found')
